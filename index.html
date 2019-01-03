@@ -1,13 +1,14 @@
 <noscript>请启用Javascript</noscript>
 <script>
-  var host = window.location.host.toLowerCase();
-  if(host.indexOf("uac")!=-1){
+  var url = window.location.pathname.toLowerCase();
+  var url1=url.split('/')[0];
+  if(url1=="uac"){
     window.location.href="https://sixziv.github.io/UAC-Renderer";
   }else
-  if(host.indexOf("uacrenderer")!=-1){
+  if(url1=="uacrenderer"){
     window.location.href="https://sixziv.github.io/UAC-Renderer";
   }else
-  if(host.indexOf("uac-renderer")!=-1){
+  if(url1=="uac-renderer"){
     window.location.href="https://sixziv.github.io/UAC-Renderer";
   }else{
     window.location.href="https://sixziv.github.io/index.md";
