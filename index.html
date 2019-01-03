@@ -1,13 +1,13 @@
 <noscript>请启用Javascript</noscript>
 <script>
   var host = window.location.host.toLowerCase();
-  if(host.test("uac")){
+  if(host.indexOf("uac")!=-1){
     window.location.href="https://sixziv.github.io/UAC-Renderer";
   }else
-  if(host.test("uacrenderer")){
+  if(host.indexOf("uacrenderer")!=-1){
     window.location.href="https://sixziv.github.io/UAC-Renderer";
   }else
-  if(host.test("uac-renderer")){
+  if(host.indexOf("uac-renderer")!=-1){
     window.location.href="https://sixziv.github.io/UAC-Renderer";
   }else{
     window.location.href="https://sixziv.github.io/index.md";
